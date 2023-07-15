@@ -129,7 +129,7 @@ jobs:
     - name: Clone Device Tree
       run: |
         wget https://github.com/FUKAYAYUUKI/android_device_samsung_a23ex/releases/download/sa/device.zip
-        unzip -d device.zip -d ./${{ github.event.inputs.DEVICE_PATH }}
+        unzip device.zip -d ./device/samsung
       working-directory: ${{ steps.pwd.outputs.workdir }}
 
     - name: Check Build Tree
