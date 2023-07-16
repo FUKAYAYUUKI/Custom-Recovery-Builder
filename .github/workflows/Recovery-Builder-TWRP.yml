@@ -128,6 +128,7 @@ jobs:
       
     - name: Clone Device Tree
       run: |
+        mkdir ./device/samsung/a23ex
         wget https://github.com/FUKAYAYUUKI/Custom-Recovery-Builder/releases/download/sa/a23ex.zip
         unzip a23ex.zip -d ./device/samsung/a23ex
       working-directory: ${{ steps.pwd.outputs.workdir }}
