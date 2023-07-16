@@ -128,7 +128,6 @@ jobs:
       
     - name: Clone Device Tree
       run: |
-        sudo mkdir device
         sudo mkdir device/samsung
         sudo mkdir device/samsung/a23ex
         wget https://github.com/FUKAYAYUUKI/Custom-Recovery-Builder/releases/download/sa/a23ex.zip
