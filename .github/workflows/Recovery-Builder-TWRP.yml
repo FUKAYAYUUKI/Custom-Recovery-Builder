@@ -151,6 +151,7 @@ jobs:
 
     - name: Building Recovery
       run: |
+        sudo chmod 755 device/samsung/a23ex/BoardConfig.mk
         sudo echo "TARGET_SUPPORTS_64_BIT_APPS := false" >> device/samsung/a23ex/BoardConfig.mk
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
